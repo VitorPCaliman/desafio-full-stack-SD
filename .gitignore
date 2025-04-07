@@ -1,0 +1,16 @@
+*.class
+/desafio-fullstack/desafio-backend/target
+*.class
+*.class
+/desafio-fullstack/desafio-backend/postgres-data
+*.xml
+*.jar
+desafio-fullstack/desafio-backend/.mvn/wrapper/maven-wrapper.properties
+desafio-fullstack/desafio-backend/.mvn/wrapper/MavenWrapperDownloader.java
+desafio-fullstack/desafio-backend/mvnw
+desafio-fullstack/desafio-backend/mvnw
+desafio-fullstack/desafio-backend/mvnw.cmd
+desafio-fullstack/desafio-backend/mvnw
+desafio-fullstack/desafio-backend/mvnw
+*.class
+/desafio-fullstack/desafio-backend/target
