@@ -1,0 +1,23 @@
+
+<div class="profile-container" *ngIf="user">
+    <h2>Perfil do Usuário</h2>
+    <div class="profile-info">
+      <p><strong>Nome:</strong> {{ user?.name }}</p>
+      <p><strong>Email:</strong> {{ user?.email }}</p>
+      <p><strong>Role:</strong> {{ user?.role }}</p>
+    </div>
+  
+    <div class="update-password">
+      <h3>Atualizar Senha</h3>
+      <form (ngSubmit)="updatePassword()" novalidate>
+        <div class="form-group">
+          <label for="newPassword">Nova Senha:</label>
+          <input type="password" id="newPassword" [(ngModel)]="newPassword" name="newPassword" required>
+        </div>
+        <button type="submit" class="btn">Atualizar Senha</button>
+        <div *ngIf="message" class="success">{{ message }}</div>
+        <div *ngIf="error" class="error">{{ error }}</div>
+      </form>
+    </div>
+  </div>
+  

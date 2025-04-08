@@ -1,10 +1,16 @@
-<mat-toolbar color="primary">
+
+<nav class="navbar" color="primary">
   <span>Product-Category Management</span>
   <span class="spacer"></span>
-  <a mat-button routerLink="/products" routerLinkActive="active">
-    <mat-icon>inventory_2</mat-icon> Products
-  </a>
-  <a mat-button routerLink="/categories" routerLinkActive="active">
-    <mat-icon>category</mat-icon> Categories
-  </a>
-</mat-toolbar>
+  <ul>
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/products">Products</a></li>
+    <li><a routerLink="/categories">Categories</a></li>
+    <li *ngIf="user">
+      <a routerLink="/profile">Bem-vindo, {{ user.name }}</a>
+    </li>
+    <li *ngIf="!user">
+      <a routerLink="/login">Login</a>
+    </li>
+  </ul>
+</nav>

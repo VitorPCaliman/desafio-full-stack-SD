@@ -6,9 +6,15 @@ import { ProductDetailComponent } from './components/products/product-detail/pro
 import { CategoryListComponent } from './components/categories/category-list/category-list.component';
 import { CategoryFormComponent } from './components/categories/category-form/category-form.component';
 import { CategoryDetailComponent } from './components/categories/category-detail/category-detail.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { ProfileComponent } from './components/auth/profile/profile.component';
+import { RegisterComponent } from './components/auth/register/register.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
+  { path: 'profile', component: ProfileComponent },
   { path: 'products', component: ProductListComponent },
   { path: 'products/new', component: ProductFormComponent },
   { path: 'products/:id', component: ProductDetailComponent },
