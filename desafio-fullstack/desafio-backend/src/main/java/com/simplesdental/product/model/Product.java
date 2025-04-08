@@ -35,7 +35,7 @@ public class Product {
     @NotNull(message = "Status is required")
     private Boolean status;
 
-    private String code;
+    private Integer code;
 
     @NotNull(message = "Category is required")
     @ManyToOne(fetch = FetchType.EAGER)
@@ -83,11 +83,11 @@ public class Product {
         this.status = status;
     }
 
-    public String getCode() {
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(String code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
